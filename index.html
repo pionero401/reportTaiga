@@ -1,0 +1,81 @@
+﻿<html>
+    <head>
+        <title>
+        </title>
+
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="data:text/css;charset=utf-8," data-href="css/bootstrap-theme.min.css" rel="stylesheet" id="bs-theme-stylesheet">
+        <link href="css/docs.min.css" rel="stylesheet">
+        <link href="css/visor.css" rel="stylesheet">      
+        <link href="css/style-GTB.css" rel="stylesheet">
+        <script src="scripts/lib/jQuery/jquery-1.8.3.min.js"></script>
+        
+        <link rel="icon" type="image/png" href="img/favicon.ico">
+        <script type="text/javascript" src="json/project.json"></script>
+        <script data-main="scripts/config" src="scripts/lib/requirejs/2.1.19/require.js"></script>
+    </head>
+    <body id="body">
+        <header>
+            <div class="container">
+                <div class="logo"><h1>Santander</h1></div>
+                <h2 id="navbar-title"></h2>
+            </div>
+        </header>
+        <nav class="navegacion">
+            <div class="container">
+                <ul class="menuP">
+                    <li class="select">
+                        <a id="tabGeneral">
+                            <span class="elementos">
+                            </span>
+                            General
+                        </a>
+                    </li>
+                    <li>
+                        <a id="tabUserStories"  class="link">
+                            <span class="plantilla">
+                            </span>
+                            Historias
+                        </a>
+                    </li>
+                    <li>
+                        <a id="tabActors"  class="link">
+                            <span class="layouts">
+                            </span>
+                            Actores
+                        </a>
+                    </li>
+                    <li>
+                        <a id="tabTracer"  class="link">
+                            <span class="propiedades">
+                            </span>
+                            Seguimiento
+                        </a>
+                    </li>
+                    <li>
+                        <a id="tabReport"  class="link">
+                            <span class="informes">
+                            </span>
+                            Informes
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container bs-docs-container" id="lienzo">
+            <div class="row">
+                <div class="col-md-11" role="main" id="content">
+                </div>
+            </div>
+        </div>
+
+        <footer class="bs-docs-footer" role="contentinfo">
+            <div class="container">
+                <img src="img/isban_t.png">
+                © Ingeniería de Software Bancario, S.L. – Todos los derechos reservados.
+            </div>
+        </footer>
+
+    </body>
+</html>
