@@ -198,7 +198,7 @@
             var userStory = project.user_stories[iUserStory];
             _writeParagraphPDF(doc, "h2", "subtitle",  "[US-"+userStory.ref+"] " + userStory.subject);
             _utilsPDF.newLine(doc,_utilsPDF.marginNewLine.subtitle);
-            if(userStory.tags.length > 0 && userStory.tags != "[]"){
+            if(userStory.tags != null && userStory.tags.length > 0 && userStory.tags != "[]"){
                 _writeParagraphPDF(doc, "h2", "subsubtitle", userStory.tags.toString());
                 _utilsPDF.newLine(doc,_utilsPDF.marginNewLine.subtitle);
             }
@@ -214,7 +214,7 @@
                 if(task.user_story == idUserStory){
                     _writeParagraphPDF(doc, "h3", "subtitle", "[US-"+idUserStory+"][T-"+task.ref+"] " + task.subject );
                     _utilsPDF.newLine(doc,_utilsPDF.marginNewLine.subtitle);
-                    if(task.tags.length > 0 && task.tags != "[]" ){
+                    if(task.tags != null && task.tags.length > 0 && task.tags != "[]" ){
                         _writeParagraphPDF(doc, "h3", "subsubtitle", task.tags.toString());
                         _utilsPDF.newLine(doc,_utilsPDF.marginNewLine.subtitle);
                     }
